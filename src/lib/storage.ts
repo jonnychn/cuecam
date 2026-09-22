@@ -1,4 +1,4 @@
-const KEY = "cuecam-v1";
+const KEY = "cuecam-v2";
 
 export const ASPECTS = ["1:1", "4:3", "16:9"] as const;
 export type Aspect = (typeof ASPECTS)[number];
@@ -42,7 +42,7 @@ export const DEFAULTS: SavedSettings = {
   speed: 46,
   zoom: 1,
   fontSize: 34,
-  aspect: "16:9",
+  aspect: "1:1",
 };
 
 export function loadSettings(): SavedSettings {
