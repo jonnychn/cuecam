@@ -61,9 +61,10 @@ export function StudioScreen() {
           ) : null}
           <div className="viewfinder-vignette pointer-events-none absolute inset-0" />
           <ViewfinderCorners />
-          <Teleprompter />
         </div>
       </div>
+
+      <Teleprompter />
 
       <div className="pointer-events-none absolute inset-x-0 top-0 z-20 bg-gradient-to-b from-bg/70 to-transparent pt-[max(0.5rem,env(safe-area-inset-top))]">
         <div className="pointer-events-auto flex items-center justify-between px-3 py-2">

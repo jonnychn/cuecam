@@ -71,24 +71,32 @@
   }
 }
 
+.prompt-read-line {
+  top: calc(env(safe-area-inset-top, 0px) + 3.55rem);
+}
+
+.prompt-lead {
+  height: calc(env(safe-area-inset-top, 0px) + 3.15rem);
+}
+
 .prompt-mask {
   -webkit-mask-image: linear-gradient(
     to bottom,
     transparent 0%,
-    rgb(0 0 0 / 0.35) 14%,
-    black 30%,
-    black 52%,
-    rgb(0 0 0 / 0.4) 68%,
-    transparent 86%
+    rgb(0 0 0 / 0.55) 6%,
+    black 11%,
+    black 26%,
+    rgb(0 0 0 / 0.45) 42%,
+    transparent 62%
   );
   mask-image: linear-gradient(
     to bottom,
     transparent 0%,
-    rgb(0 0 0 / 0.35) 14%,
-    black 30%,
-    black 52%,
-    rgb(0 0 0 / 0.4) 68%,
-    transparent 86%
+    rgb(0 0 0 / 0.55) 6%,
+    black 11%,
+    black 26%,
+    rgb(0 0 0 / 0.45) 42%,
+    transparent 62%
   );
 }
 

@@ -49,8 +49,8 @@ export function Teleprompter() {
   const lines = script.trim() || "Add your script on the previous screen.";
 
   return (
-    <div className="pointer-events-none absolute inset-0 z-10">
-      <div className="absolute inset-x-0 top-[28%] z-20 flex items-center gap-3 px-5">
+    <div className="pointer-events-none absolute inset-0 z-[15]">
+      <div className="prompt-read-line absolute inset-x-0 z-20 flex items-center gap-3 px-5">
         <span className="h-px flex-1 bg-fg/35" />
         <span className="size-1.5 rounded-full bg-fg/80" />
         <span className="h-px flex-1 bg-fg/35" />
@@ -58,7 +58,7 @@ export function Teleprompter() {
 
       <div className="prompt-mask absolute inset-0 overflow-hidden">
         <div ref={scrollerRef} className="will-change-transform">
-          <div className="h-[28vh]" />
+          <div className="prompt-lead" />
           <p
             className="px-6 text-center font-medium text-fg"
             style={{
@@ -71,7 +71,7 @@ export function Teleprompter() {
           >
             {lines}
           </p>
-          <div className="h-[55vh]" />
+          <div className="h-[70vh]" />
         </div>
       </div>
     </div>
